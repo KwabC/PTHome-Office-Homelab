@@ -20,6 +20,10 @@ This homelab simulates a small office network with three wired computers, one pr
 | SW0 | FE0 | N/A | N/A | 0 |
 
 ## Key Commands/Notes
-
+- Used ip dhcp pool LAN for wired devices
+- Used ip dhcp pool WLAN for wireless devices
+- Pinged the routers and printer to ensure stable connectivity
 
 ## Files
+
+
