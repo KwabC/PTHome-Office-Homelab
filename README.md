@@ -5,7 +5,8 @@ This homelab simulates a small office network with three wired computers, one pr
 **Packet Tracer version used:** 9.0.1
 
 ## Topology 
-<img width="907" height="467" alt="diagram png" src="https://github.com/user-attachments/assets/5a9a1837-eea9-4d33-b38a-32dacff65962" />
+<img width="911" height="490" alt="Home Office LAN" src="https://github.com/user-attachments/assets/62806687-780b-4131-80f0-36d63792d5ef" />
+
 
 ## IP Addressing
 | Device | Interface | IP Address | Subnet Mask | Area |
@@ -20,10 +21,15 @@ This homelab simulates a small office network with three wired computers, one pr
 | SW0 | FE0 | N/A | N/A | 0 |
 
 ## Key Commands/Notes
-- Used ip dhcp pool LAN for wired devices
-- Used ip dhcp pool WLAN for wireless devices
-- Pinged the routers and printer to ensure stable connectivity
+- Connected All PCs to SW0 using straight-through cables
+- Connected R0 and PTR0 to SW0 using a straight-through cable
+- Connected WR0 to R0 using a crossover-cable
+- Used 'ip dhcp pool LAN' to set up a dhcp pool for wired devices on the 192.168.1.0/24 network
+- Used 'ip dhcp pool WLAN' to set up a dhcp pool for wireless devices on the 192.168.2.0/24 network
+- Set up a static ip address for PTR0
+- Pinged the routers and printer to test stable connectivity
 
 ## Files
+[Router0_config.txt](https://github.com/user-attachments/files/33068336/Router0_config.txt)
 
 
